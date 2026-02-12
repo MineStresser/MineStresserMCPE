@@ -32,9 +32,9 @@ while True:
 		time.sleep(1)
 		os.system("clear")
 		os.system("pyfiglet --color=RED MineTeamH4CK")
-		os.system(f"python ping.py {player_4_ip} -p {player_4_port}")
+		os.system(f"python3 ping.py {player_4_ip} -p {player_4_port}")
 		
 	if player == '1':
 		os.system("clear")
-		os.system("python stress.py")		
+		os.system("python3 stress.py")		
 		
