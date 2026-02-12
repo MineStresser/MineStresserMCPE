@@ -21,11 +21,11 @@ medium_latency = 0
 if args.tm:
     timeout = float(args.tm)
 else:   
-    timeout = 1
+    timeout = 0
 if args.cd:
     coldown = float(args.tm)
 else:
-    coldown = 1
+    coldown = 0
 sock = socket(AF_INET, SOCK_DGRAM)
 sock.settimeout(timeout)
 payload = bytes.fromhex("01" + "0000000000000000" + "00ffff00fefefefefdfdfdfd12345678" + "0000000000000000")
@@ -54,11 +54,11 @@ try:
                     else:
                         lower_latency = latency0
         except TimeoutError:
-            print('\033[0;31mConnection Time out\033[0m')
+            print('\033[0;31mServer cant Connection With This IP Port\033[0m')
             falhas += 1
             enviadas += 1
         except Exception as e:
-            print('\033[0;31mConnection refused.\033[0m\n\n')
+            print('\033[0;31mServer Socket!\033[0m\n\n')
 
         time.sleep(coldown)
 except KeyboardInterrupt:
